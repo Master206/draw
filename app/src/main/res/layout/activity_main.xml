@@ -9,9 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="master206.draw.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/label1" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="274dp"
+            android:layout_height="138dp"
+            android:text="Hier kannst du malen !"
+            android:id="@+id/label1"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="25dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="183dp"
+            android:layout_height="194dp"
+            android:text="Paint"
+            android:id="@+id/buttonPaint"
+            android:onClick="onClickButton"
+            android:singleLine="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
 </RelativeLayout>
